@@ -18,9 +18,8 @@ var searchBST = function(root, val) {
              if(root.val === val) return root
              else if(root.val < val) return search(root.right)
              return search(root.left)
-         } 
+         }else return null 
      } 
-     
-     if(typeof search(root) === 'undefined') return null
-     else  return search(root)
+    
+     return search(root)
 };
