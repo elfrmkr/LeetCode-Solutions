@@ -14,7 +14,7 @@
 
 var isBalanced = function(root) {
     
-    if(root==null) return true;
+    if(!root) return true;
     
     let left = depth(root.left);
     let right = depth(root.right);
