@@ -1,6 +1,5 @@
-
 var reverseList = function(head) {
-      if (!head || !head.next) {
+     if (!head || !head.next) {
         return head;
       }
       let first = head;
@@ -16,4 +15,4 @@ var reverseList = function(head) {
       head.next = null;
       head = first;
     return head
-};
+}
